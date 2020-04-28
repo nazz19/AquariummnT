@@ -17,17 +17,17 @@ public class Main {
             aquarium.addSpecies(name, size, age);
         }
 
-        System.out.println("Name of a fish you want to change: ");
-        String nameF = scanner.next();
-
-
-        System.out.println("New age for a fish:");
-        int newAge = scanner.nextInt();
-        aquarium.changeAge(nameF, newAge);
+        System.out.println("Index of a fish you want to change: ");
+        int indexF = scanner.nextInt();
 
         System.out.println("New size for a fish:");
         int sizeF = scanner.nextInt();
-        aquarium.changeSize(nameF, sizeF);
+        aquarium.changeSize(indexF, sizeF);
+
+        System.out.println("New age for a fish:");
+        int newAge = scanner.nextInt();
+        aquarium.changeAge(indexF, newAge);
+
 
         System.out.println("Type index of fish that you want to remove");
         int indexRemove = scanner.nextInt();
